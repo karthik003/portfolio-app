@@ -1,0 +1,11 @@
+.landingBox{
+    width:100%;
+    /* padding-left: 250px; */
+    /* padding-top: 100px; */
+}
+@media (min-width: 768px) {
+    .MuiTabs-flexContainer {
+      justify-content: center;
+    }
+  }
+  
