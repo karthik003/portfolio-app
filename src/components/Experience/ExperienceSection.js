@@ -3,10 +3,20 @@ import { Typography } from '@mui/material';
 
 function ExperienceSection(props) {
   return (
-    <div>
-        <Typography variant="h6" style={{fontFamily:"Montserrat, sans-serif"}}>{props.role}</Typography>
+    <div style={{color:"black"}}>
+        <Typography variant="h6" style={{fontFamily:"Montserrat, sans-serif"}}><i>{props.role}</i></Typography>
+        {/* Responsibilities -  */}
         <br />
-        Work - {props.work}
+        {props.work}
+        <ul style={{listStyleType:"square"}}>
+            {props.responsibilities && 
+            props.responsibilities.map((item)=>{
+                return(
+                <li>{item.value}</li> 
+                )
+            })
+            }
+        </ul>
     </div>
   )
 }

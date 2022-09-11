@@ -25,10 +25,11 @@ const navItems = [
   text:'About',
   route:'/about'
 },
-{
-  text:'Contact',
-  route:'/contact'
-}];
+// {
+//   text:'Contact',
+//   route:'/contact'
+// }
+];
 
 function Navbar(props) {
   const { window } = props;
@@ -78,7 +79,7 @@ function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontFamily:"Montserrat, sans-serif" }}
           >
-            <Link to="/" style={{textDecoration:"none", color:"black"}}>VJK</Link>
+            <Link to="/" style={{textDecoration:"none", color:"black", fontFamily:'Montserrat, sans-serif', fontSize:'30px'}}>VJK</Link>
             
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>

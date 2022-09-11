@@ -9,7 +9,7 @@ function Blogs() {
     const blogsList=[
         {
             title:'Callbacks with Node',
-            desc:'What are callbacks, man?',
+            desc:'What are callbacks, very annoying?',
             webLink:'https://medium.com/@vjk2018/callbacks-with-node-83c78cfbc582',
             publishedDate:'Oct 4, 2020'
         },

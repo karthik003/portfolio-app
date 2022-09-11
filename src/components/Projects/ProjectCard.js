@@ -21,12 +21,14 @@ function ProjectCard(props) {
       <CardHeader
         action={
             <>
+                {props.gitLink && 
                 <IconButton aria-label="settings">
                     <a href={props.gitLink?props.gitLink:test} style={{color:"black"}} target="_blank" rel="noreferrer"><GitHubIcon /></a>
-                </IconButton>
+                </IconButton>}
+                {props.webLink && 
                 <IconButton aria-label="settings">
                     <a href={props.webLink?props.webLink:test} style={{color:"#3947C2"}} target="_blank" rel="noreferrer"><OpenInBrowserIcon /></a>
-                </IconButton>
+                </IconButton>}
             </>
         }
         title={props.title}
@@ -36,6 +38,10 @@ function ProjectCard(props) {
         <Typography variant="body2" color="text.secondary" style={{textAlign:"justify"}}>
           {props.desc}
         </Typography>
+        <br />
+          <Typography variant="body2"  style={{textAlign:"justify"}}>
+            <i>{props.techStack}</i>
+          </Typography>
       </CardContent>
     </Card>
     </div>
