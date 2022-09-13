@@ -4,7 +4,6 @@ import Typewriter from 'typewriter-effect';
 import EmailIcon from '@mui/icons-material/Email';
 // import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
-// import { makeStyles } from '@mui/styles';
 
 import './Intro.css'
 
