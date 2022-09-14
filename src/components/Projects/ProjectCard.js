@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 import IconButton from '@mui/material/IconButton';
-  
+
 function ProjectCard(props) {
     const test = "https://www.google.com"
   return (
@@ -23,11 +23,11 @@ function ProjectCard(props) {
             <>
                 {props.gitLink && 
                 <IconButton aria-label="settings">
-                    <a href={props.gitLink?props.gitLink:test} style={{color:"black"}} target="_blank" rel="noreferrer"><GitHubIcon /></a>
+                    <a href={props.gitLink?props.gitLink:test} style={{color:"black"}} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
                 </IconButton>}
                 {props.webLink && 
                 <IconButton aria-label="settings">
-                    <a href={props.webLink?props.webLink:test} style={{color:"#3947C2"}} target="_blank" rel="noreferrer"><OpenInBrowserIcon /></a>
+                    <a href={props.webLink?props.webLink:test} style={{color:"#3947C2"}} target="_blank" rel="noopener noreferrer"><OpenInBrowserIcon /></a>
                 </IconButton>}
             </>
         }

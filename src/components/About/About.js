@@ -1,12 +1,20 @@
-import React from 'react'
+import React from 'react';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import PropTypes from 'prop-types';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardMedia from '@mui/material/CardMedia';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import IconButton from '@mui/material/IconButton';
+
 import vjk from '../../assets/vjk-dp.jpeg'
 
+import './About.css'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,7 +57,7 @@ function About() {
   };
 
   return (
-    <div style={{fontFamily:"'Roboto', sans-serif", display:"flex", width:"100%"}}>
+    <div style={{fontFamily:"'Roboto', sans-serif", width:"100%"}}>
         <Box>
 
             <Tabs
@@ -58,15 +66,38 @@ function About() {
               textColor="primary"
               indicatorColor="primary"
               aria-label="secondary tabs example"
+              centered
             >
               <Tab label={"About Me"} {...a11yProps(0)} key={0} />
             </Tabs>
-            <TabPanel value={value} index={0} key={0}>
-            <Box sx={{ flexGrow: 0 }}>
-              <Grid container spacing={2}>
-                <Grid item xs={6}>
+            <TabPanel value={value} index={0} key={0} >
+            <Box>
+              <Grid 
+                container
+                spacing={0}
+              >
+                <Grid item xs={12} sm={12} md={6} lg={6} style={{justifyContent:"center", display:"flex"}}>
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardMedia
+                    component="img"
+                    alt="this is me"
+                    height="300"
+                    image={vjk}
+                  />
+                  <CardActions style={{width:"100%", display:"flex",justifyContent:"space-between"}}>
+                    <IconButton size="large">
+                    <a href="https://www.github.com/karthik003" style={{color:"black"}} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+                </IconButton>
+                <IconButton size="large">
+                    <a href="https://www.linkedin.com/in/karthik-v-j-737726169/" style={{color:"#0077B5"}} target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
+                </IconButton>
+
+                  </CardActions>
+                </Card>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
                   <p>
-                  I am Computer Science graduate from <b>Vellore Institute of Technology (VIT), Vellore</b>. 
+                  I am Computer Science graduate from <b>Vellore Institute of Technology (VIT), Vellore</b>.<br /> 
                       Currently, I'm working with <b>Cognizant</b> as a Programmer Analyst (Java FullStack).
                   </p>
                       
@@ -105,12 +136,10 @@ function About() {
                           Outside of work, 
                           I'm interested in following the developments of tech.<br/>
                           I am a speedcuber and even co-founded a club in my university.<br />
-                          I'm heavily devoted to F1.
+                          I'm heavily devoted to F1 and follow every single race.
                       </div>
                 </Grid>
-                <Grid item xs={6}>
-                    <img src={vjk} alt="That's me" style={{width:"300px"}}/>
-                </Grid>
+
               </Grid>
             </Box>
             </TabPanel>

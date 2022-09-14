@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
@@ -48,6 +48,9 @@ function TabPanel(props) {
 export default function Home() {
     const [value, setValue] = React.useState(0);
 
+    useEffect(() => {
+      setValue(0)
+    }, []);
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
@@ -67,9 +70,8 @@ export default function Home() {
         },
         {
             title:"Blogs",
-            component:<Blogs/>
+            component:<Blogs />
         },
-
     ]
     return (
         <>

@@ -14,7 +14,7 @@ function BlogCard(props) {
             action={
                 <>
                     <IconButton aria-label="settings">
-                        <a href={props.webLink} style={{color:"#389248"}} target="_blank" rel="noreferrer"><BookIcon /></a>
+                        <a href={props.webLink} style={{color:"#389248"}} target="_blank" rel="noopener noreferrer"><BookIcon /></a>
                     </IconButton>
                 </>
             }
