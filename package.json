@@ -1,6 +1,5 @@
 {
   "name": "portfolio-app",
-  "homepage": "http://karthik003.github.io/portfolio-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
