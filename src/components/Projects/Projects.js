@@ -2,9 +2,6 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
-
-import { FadeIn  } from 'react-animated-components'
-
 import ProjectCard from './ProjectCard'
 
 function Projects() {
@@ -79,7 +76,6 @@ function Projects() {
         <Typography variant="h5" style={{fontFamily:"Montserrat, sans-serif"}}>My Software Creations</Typography>
         <br />
     <Box sx={{ flexGrow: 1 }}>
-    <FadeIn >
       <Grid container spacing={2}>
         {projectsList && 
         projectsList.map((project)=>{
@@ -95,7 +91,6 @@ function Projects() {
         </Grid>)
           })}
       </Grid>
-      </FadeIn>
     </Box>
     </div>
   )
