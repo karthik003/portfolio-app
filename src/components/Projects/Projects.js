@@ -32,7 +32,7 @@ function Projects() {
             title:"NIDS Web-App",
             desc:"A Network Intrusion Detection System which uses Multi-Modal Decision Tree Classifier for efficient Intrusion Detection encapsulated by a Flask Web-App.",
             gitLink:"https://github.com/karthik003/nids-flask-webapp",
-            techStack:'Python, Flask, NPL, ML, HTML, CSS'
+            techStack:'Python, Flask, NLP, ML, HTML, CSS'
             // webLink:""
         },
         {
@@ -40,7 +40,7 @@ function Projects() {
             desc:"A phishing Email Detector Web Preview that classifies mails from your inbox as phishing or not.",
             gitLink:"https://github.com/karthik003/Phishing-Email-Detection",
             // webLink:"",
-            techStack:'Python, Flask, NPL, ML, HTML, CSS'        
+            techStack:'Python, Flask, NLP, ML, HTML, CSS'        
         },
         {
             title:"Brain Tumor Detection Web-App",
