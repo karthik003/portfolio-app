@@ -13,7 +13,7 @@ function Intro() {
     <>
             <div>
                 <Typography variant="h6"style={{fontFamily:"Montserrat, sans-serif"}}>VJ Karthik</Typography>
-                <Typography variant="h6" style={{color:"grey",fontFamily:"Montserrat, sans-serif"}}>FrontEnd Developer</Typography>
+                <Typography variant="h6" style={{color:"grey",fontFamily:"Montserrat, sans-serif"}}>Software Developer</Typography>
             </div>
             <div>
                 <Typography variant="h1" style={{fontFamily:"Montserrat, sans-serif"}}>
